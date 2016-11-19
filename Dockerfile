@@ -1,5 +1,6 @@
 FROM sebp/elk:latest
-ADD logstash.conf  /etc/logstash/conf.d 
+ADD 20-logstash.conf  /etc/logstash/conf.d 
+ADD 21-categories.gen.conf  /etc/logstash/conf.d 
 ADD 30-output.conf  /etc/logstash/conf.d 
 EXPOSE 6006
 EXPOSE 5601
