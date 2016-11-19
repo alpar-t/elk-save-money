@@ -8,6 +8,7 @@ Minor adjustments will likely be needed to the sample_preapre_input.sh script to
 statements. 
 
     # first time only 
+    ./gen_category_filters.py
     docker build . -t elk-save-money 
     
     # Then use the wrapper scripts
