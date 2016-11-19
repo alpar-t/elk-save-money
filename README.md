@@ -9,10 +9,10 @@ statements.
 
     # first time only 
     docker build . -t elk-save-money 
-    docker run -p 5601:5601 -p 6006:6006 --name elk-save-money -v elk-save-money:/var/lib/elasticsearch elk-save-money
     
-    # or just start it if not the first time 
-    docker start elk-save-money
+    # Then use the wrapper scripts
+    ./start.sh
+    ./stop.sh
 
     # push statement into the stack
     ./sample_prepare_input.sh <<Path to XLS>>
@@ -39,7 +39,7 @@ The processed credit card statement finds it's way into elastic search.
 Kibana generates nice visuals and let's you search explore your statement. 
 
 The nice visuals help you understand spending and spend less.
-
+ 
 Security ?
 ==========
 
@@ -48,4 +48,7 @@ You can see where this is actually stored on disk with :
     
     docker inspect elk-save-money | jq '.[0].Mounts'
 
+The provided start and stop wrapper scripts export the data into `finances.tar.gz` and then remove all data
+from docker.
+A future version of the wrappers will also offer encryption.
 
