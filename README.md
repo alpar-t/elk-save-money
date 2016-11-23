@@ -18,8 +18,8 @@ statements.
     # push statement into the stack
     ./sample_prepare_input.sh <<Path to XLS>>
 
-    # logstash conf changes can be deployed with
-    docker cp 20-logstash.conf elk-save-money:/etc/logstash/conf.d/ 
+    # When doing changes to the logstash config 
+    ./start --develop
 
 How it works ?
 ==============
@@ -40,12 +40,12 @@ The processed credit card statement finds it's way into elastic search.
 Kibana generates nice visuals and let's you search explore your statement. 
 
 The nice visuals help you understand spending and spend less.
- 
-Security ?
-==========
 
-The security data is stored in a [docker volume](https://docs.docker.com/engine/tutorials/dockervolumes/).
-You can see where this is actually stored on disk with :
+Security 
+========
+
+The elastic search data is stored in a [docker volume](https://docs.docker.com/engine/tutorials/dockervolumes/).
+You can see where this is actually stored on disk after the container is created with :
     
     docker inspect elk-save-money | jq '.[0].Mounts'
 
