@@ -47,7 +47,7 @@ def generate():
 
 
 if __name__ == "__main__":
-    with open('21-categories.gen.conf', 'w+') as conf:
+    with open('logstash.conf.d/21-categories.gen.conf', 'w+') as conf:
         conf.write('filter {')
         for each in generate():
             conf.write(each)

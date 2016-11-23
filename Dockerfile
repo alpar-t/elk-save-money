@@ -1,8 +1,7 @@
 FROM sebp/elk:latest
-ADD 20-logstash.conf  /etc/logstash/conf.d 
-ADD 21-categories.gen.conf  /etc/logstash/conf.d 
-ADD 30-output.conf  /etc/logstash/conf.d 
+ADD logstash.conf.d  /etc/logstash/conf.d 
 EXPOSE 6006
 EXPOSE 5601
 ENV LS_OPTS="--config.reload.automatic"
-RUN /opt/logstash/bin/logstash-plugin install logstash-filter-checksum
+RUN /opt/logstash/bin/logstash-plugin install logstash-filter-checksum && \
+    /opt/logstash/bin/logstash-plugin install logstash-filter-elasticsearch
