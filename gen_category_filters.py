@@ -25,9 +25,15 @@ CATEGORIES = {
         'Comision': ['banking', 'fees'],
         'Schimb valutar': ['banking', 'exchange'],
         'com PDF ORANGE': ['banking', 'fees', 'recurring'],
-        'PRIMARIA MUNICIPIU': ['local auth', 'taxes', 'gov'],
+        'PRIMARIA ': ['local auth', 'taxes', 'gov'],
         'CAS pers. fizice': ['taxes', 'gov'],
         'bugetul de stat': ['taxes', 'gov'],
+        'BUGETUL DE STAT': ['taxes', 'gov'],
+        'BUGETELE ASIG.SOC': ['taxes', 'gov'],
+        'Trezorerie ': ['taxes', 'gov'],
+        'taxa pe valoare adaugata': ['taxes', 'gov'],
+
+        'CONTRACT DE ASISTENTA JURIDICA': ['legal'],
 
         'LUKOIL ': ['gas', 'car', 'transport'],
         'OMV ': ['gas', 'car', 'transport'],
@@ -36,8 +42,10 @@ CATEGORIES = {
         'CRODUX ': ['gas', 'car', 'transport'],
         'UBER ': ['Uber', 'transport'],
         'HRVATSKE AUTOCESTE ': ['roadtax', 'transport'],
+        'AUTOCARPET SRL': ['cleaning', 'transport'],
 
         'ALLIANZTIRIAC': ['insurrance'],
+        'ALLIANZ TIRIAC ASIG': ['insurrance'],
 
         'ROUMASPORT SRL ': ['Dechatlon', 'sportsware', 'shopping'],
         'HERVIS SPORTS ': ['Hervis', 'sportsware', 'shopping'],
@@ -67,6 +75,8 @@ CATEGORIES = {
         'MEDICO CHIRURGICAL ': ['health'],
         'CABINET OFTA ': ['health', 'vision'],
         'CRYSTAL OPTIC ': ['health', 'vision'],
+        'OPTICRIS ': ['health', 'vision'],
+        'SC N & B DENT': ['health', 'dental'],
 
         'CARREFOUR ': ['Carrefour', 'groceries', 'shopping', 'supermarket'],
         'PROFI MAG': ['groceries', 'Profi'],
@@ -88,6 +98,7 @@ CATEGORIES = {
 
         'WIZZ AIR ': ['travel', 'plane'],
         'Hotel on Booking.com': ['travel', 'accomodation'],
+        'AIRBNB ': ['travel', 'accomodation'],
 
         'E.ON ENERGIE': ['home', 'utilities', 'heat'],
         'AFEE CLUJ MOBILPAY MUNICIPIUL ': ['home', 'utilities', 'electric'],
@@ -141,6 +152,7 @@ CATEGORIES = {
         'GEOX ': ['shoes', 'shopping'],
         'HUMANIC ': ['shoes', 'shopping'],
         'MAGAZIN BIGSTEP ': ['shoes', 'shopping'],
+        'AMELY  ': ['shoes', 'shopping'],
 
         'DINOLAND ': ['toys', 'shopping'],
         'NORIELTOYS ': ['toys', 'shopping'],
@@ -160,8 +172,9 @@ CATEGORIES = {
         'PAYPAL': ['Paypal', 'supermarket'],
         'Amazon.com': ['Amazon', 'supermarket', 'shopping'],
         'garagemal': ['GarageMall', 'supermarket', 'shopping'],
-        'ALTEX ': ['Altex', 'supermarket', 'shopping'],
+        'ALTEX': ['Altex', 'supermarket', 'shopping'],
         'EMAG.RO ': ['eMag', 'supermarket', 'shopping'],
+        'emag.ro': ['eMag', 'supermarket', 'shopping'],
         'eMAG ': ['eMag', 'supermarket', 'shopping'],
         'pcgarage': ['PcGarage', 'shopping', 'it'],
         'AMAZON SERVICES-KINDLE': ['Amazon', 'books', 'education'],
