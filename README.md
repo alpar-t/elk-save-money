@@ -8,8 +8,7 @@ Minor adjustments will likely be needed to the sample_preapre_input.sh script to
 statements. 
 
     # first time only 
-    ./gen_category_filters.py
-    docker build . -t elk-save-money 
+    ./build.sh
     
     # might need to increase this so elastcsearch will start 
     sudo sysctl vm.max_map_count=262144
