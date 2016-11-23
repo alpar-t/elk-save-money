@@ -11,6 +11,9 @@ statements.
     ./gen_category_filters.py
     docker build . -t elk-save-money 
     
+    # might need to increase this so elastcsearch will start 
+    sudo sysctl vm.max_map_count=262144
+
     # Then use the wrapper scripts
     ./start.sh
     ./stop.sh
