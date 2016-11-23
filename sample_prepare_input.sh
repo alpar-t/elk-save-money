@@ -30,7 +30,7 @@ if ! check_tool $NCAT "Please install gnumeric" ; then
 fi;
 
 # Convert from input XLS
-ssconvert  $1 $tmpfile
+ssconvert "$1" $tmpfile
 
 # Parse header information
 OWNER=`grep '^"Nume client:' $tmpfile | cut -d, -f2 | sed -e 's/"//g'`
@@ -46,4 +46,3 @@ grep '^[0-9]\{2\}\/[0-9]\{2\}\/[0-9]\{4\}' $tmpfile \
     | sed "s/\$/,$OWNER,$ACCOUNT_NO,$CURRENCY/" \
     | $NCAT localhost 6006
 
-echo Successfully processed account owned by  $OWNER
