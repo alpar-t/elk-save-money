@@ -2,6 +2,13 @@
 
 set -e
 
+MIN_MAX_MAP_COUNT=262144
+if [ `sysctl vm.max_map_count | cut -d= -f2` -le $MIN_MAX_MAP_COUNT ] ; then 
+    echo "Changing vm.max_map_count (sudo)"
+    # need to increase this so elastcsearch will start 
+    sudo sysctl vm.max_map_count=$MIN_MAX_MAP_COUNT
+fi
+
 if `echo $@|grep -q '\-\-develop'` ; then 
     # reflect local conf changes in the container instantly
     DEVELOP="-v $PWD/logstash.conf.d:/etc/logstash/conf.d"

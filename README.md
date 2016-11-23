@@ -10,9 +10,6 @@ statements.
     # first time only 
     ./build.sh
     
-    # might need to increase this so elastcsearch will start 
-    sudo sysctl vm.max_map_count=262144
-
     # Then use the wrapper scripts
     ./start.sh
     ./stop.sh
