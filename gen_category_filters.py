@@ -29,9 +29,11 @@ CATEGORIES = {
         'CAS pers. fizice': ['taxes', 'gov'],
         'bugetul de stat': ['taxes', 'gov'],
         'BUGETUL DE STAT': ['taxes', 'gov'],
-        'BUGETELE ASIG.SOC': ['taxes', 'gov'],
+        'BUGETELE ASIG': ['taxes', 'gov'],
         'Trezorerie ': ['taxes', 'gov'],
         'taxa pe valoare adaugata': ['taxes', 'gov'],
+
+        'SCHIMB VALUTAR': ['exchange', 'banking'],
 
         'CONTRACT DE ASISTENTA JURIDICA': ['legal'],
 
@@ -70,6 +72,7 @@ CATEGORIES = {
         'VITAFARM ': ['drugs', 'health'],
         'ELMAFARM ': ['drugs', 'health'],
         'DUCFARM ': ['drugs', 'health'],
+        'FACULTAS PLUS ': ['drugs', 'health'], # Catena
         'NOVOGYNPRO ': ['health'],
         'PROMEDICAL ': ['health'],
         'MEDICO CHIRURGICAL ': ['health'],
@@ -95,6 +98,7 @@ CATEGORIES = {
         'ATM ': ['cash'],
         'AG HERMES': ['cash'],
 
+        'SC INTERNATIONAL PAPER': ['office'],
 
         'WIZZ AIR ': ['travel', 'plane'],
         'Hotel on Booking.com': ['travel', 'accomodation'],
