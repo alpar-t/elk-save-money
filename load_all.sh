@@ -7,4 +7,4 @@ if [ -z "$1" ] ; then
     exit 1
 fi
 
-find $1 -name '*.xls' | parallel --eta --bar ./sample_prepare_input.sh {}
+find $1 -name '*.xls' | parallel -n 4 --eta --bar ./sample_prepare_input.sh {}
