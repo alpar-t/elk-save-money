@@ -23,7 +23,9 @@ CATEGORIES = {
         'IMPOZIT RETINUT': ['tax', 'interest', 'gov'],
         'COMISION': ['banking', 'fees'],
         'Comision': ['banking', 'fees'],
+        'PLATA IMPRUMUT': ['banking', 'dept'],
         'Schimb valutar': ['banking', 'exchange'],
+        'SCHIMB VALUTAR': ['exchange', 'banking'],
         'com PDF ORANGE': ['banking', 'fees', 'recurring'],
         'PRIMARIA ': ['local auth', 'taxes', 'gov'],
         'CAS pers. fizice': ['taxes', 'gov'],
@@ -32,8 +34,6 @@ CATEGORIES = {
         'BUGETELE ASIG': ['taxes', 'gov'],
         'Trezorerie ': ['taxes', 'gov'],
         'taxa pe valoare adaugata': ['taxes', 'gov'],
-
-        'SCHIMB VALUTAR': ['exchange', 'banking'],
 
         'CONTRACT DE ASISTENTA JURIDICA': ['legal'],
 
@@ -156,7 +156,7 @@ CATEGORIES = {
         'GEOX ': ['shoes', 'shopping'],
         'HUMANIC ': ['shoes', 'shopping'],
         'MAGAZIN BIGSTEP ': ['shoes', 'shopping'],
-        'AMELY  ': ['shoes', 'shopping'],
+        'AMELY ': ['shoes', 'shopping'],
 
         'DINOLAND ': ['toys', 'shopping'],
         'NORIELTOYS ': ['toys', 'shopping'],
